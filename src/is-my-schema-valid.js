@@ -21,7 +21,7 @@ const customFormats = {
     'uuid': /^[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}$/i
 };
 
-function _parseValidatorErrors (errors, debug) {
+function _parseValidatorErrors (errors, options = {}) {
     return uniqueBy(errors, obj => {
         return obj.message && obj.field;
     }).map(error => {
@@ -32,10 +32,12 @@ function _parseValidatorErrors (errors, debug) {
             err.key = key;
             err.message = error.message;
         } else {
-            err.message = `Data ${error.message}`;
+            err.message = options.title ?
+                `${options.title} ${error.message}` :
+                `data ${error.message}`;
         }
 
-        if (debug) {
+        if (options.debug) {
             err._raw = error;
         }
 
@@ -57,7 +59,10 @@ function validate (data, schema = {}, options = {}) {
     if (!validatedData) {
         return {
             valid: false,
-            errors: _parseValidatorErrors(validator.errors, options.debug)
+            errors: _parseValidatorErrors(validator.errors, {
+                title: schema.title,
+                debug: options.debug
+            })
         };
     }
 
