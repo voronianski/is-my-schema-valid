@@ -15,7 +15,7 @@ npm install is-my-schema-valid --save
 
 ## Usage
 
-##### `validate(data: Object, schema: Object, options: ?Object) -> { valid: Boolean, errors: ?Array<Object> }`
+### `validate(data: Object, schema: Object, options: ?Object) -> { valid: Boolean, errors: ?Array<Object> }`
 
 Validate data object against passed schema. Function alwats returns object with boolean `valid` field, if `valid` is `false` there will be additional `errors` field with the list of error objects.
 
