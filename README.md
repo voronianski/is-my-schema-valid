@@ -1,6 +1,6 @@
 # is-my-schema-valid
 
-[![build status](http://img.shields.io/travis/voronianski/is-my-schema-valid.svg?style=flat)](https://travis-ci.org/voronianski/is-my-schema-valid.js)
+[![build status](http://img.shields.io/travis/voronianski/is-my-schema-valid.svg?style=flat)](https://travis-ci.org/voronianski/is-my-schema-valid)
 [![npm version](http://badge.fury.io/js/is-my-schema-valid.svg)](http://badge.fury.io/js/is-my-schema-valid)
 [![Dependency Status](http://david-dm.org/voronianski/is-my-schema-valid.svg)](http://david-dm.org/voronianski/is-my-schema-valid)
 
