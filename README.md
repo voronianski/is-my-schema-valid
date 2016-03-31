@@ -100,17 +100,18 @@ const schema = {
 
 There are several additional formats added for easy validating the requests:
 
-- `"mongo-object-id"` - check if the string is a valid hex-encoded representation of a [MongoDB ObjectId](http://docs.mongodb.org/manual/reference/object-id/)
-- `"alpha"` - check if the string contains only letters (a-zA-Z)
-- `"alphanumeric"` - check if the string contains only letters and numbers
-- `"numeric"` - check if the string contains only numbers
-- `"hexadecimal"` - check if the string is a hexadecimal number
-- `"hexcolor"` - check if the string is a hexadecimal color
+- `"mongo-object-id"` - check if a string is a valid hex-encoded representation of a [MongoDB ObjectId](http://docs.mongodb.org/manual/reference/object-id/)
+- `"alpha"` - check if a string contains only letters (a-zA-Z)
+- `"alphanumeric"` - check if a string contains only letters and numbers
+- `"numeric"` - check if a string contains only numbers
+- `"hexadecimal"` - check if a string is a hexadecimal number
+- `"hexcolor"` - check if a string is a hexadecimal color
 - `"base64"` - check if a string is [Base64](https://en.wikipedia.org/wiki/Base64) encoded
 - `"decimal"` - check if a string is a decimal number, such as 0.1, .3, 1.1, 1.00003, 4.0, etc.
 - `"int"` - check if a string is an integer
 - `"float"` - check if a string is a float
-- `"uuid"` - check if the string is [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+- `"uuid"` - check if a string is [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+- `"data-uri` - check if a string is [data uri format](https://developer.mozilla.org/en-US/docs/Web/HTTP/data_URIs)
 
 In the example below we can ensure that id is valid [MongoDB ObjectId](http://docs.mongodb.org/manual/reference/object-id/): 
 
