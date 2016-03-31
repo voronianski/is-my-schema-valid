@@ -4,9 +4,9 @@
 [![npm version](http://badge.fury.io/js/is-my-schema-valid.svg)](http://badge.fury.io/js/is-my-schema-valid)
 [![Dependency Status](http://david-dm.org/voronianski/is-my-schema-valid.svg)](http://david-dm.org/voronianski/is-my-schema-valid)
 
-<!-- [![Download Count](http://img.shields.io/npm/dm/is-my-schema-valid.svg?style=flat)](http://www.npmjs.com/package/is-my-schema-valid) -->
+[![Download Count](http://img.shields.io/npm/dm/is-my-schema-valid.svg?style=flat)](http://www.npmjs.com/package/is-my-schema-valid)
 
-> Simple function that validates data according to [JSONSchema](http://json-schema.org) spec (under the hood it uses [is-my-json-valid](https://github.com/mafintosh/is-my-json-valid)).
+> Simple function that validates data according to [JSONSchema](http://json-schema.org) spec (under the hood it is powered by [is-my-json-valid](https://github.com/mafintosh/is-my-json-valid) which uses code generation to be extremely fast).
 
 ## Install
 
